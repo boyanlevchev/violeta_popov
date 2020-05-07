@@ -9,8 +9,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import mainPageContentReducer from './reducers/main_page_content_reducer';
+import appContentReducer from './reducers/app_content_reducer'
 const reducers = combineReducers({
-  mainPageContent: mainPageContentReducer
+  mainPageContent: mainPageContentReducer,
+  appContentTarget: appContentReducer
 });
 
 ReactDOM.render(

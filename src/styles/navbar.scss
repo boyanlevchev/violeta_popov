@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import "./config/breakpoints";
+
 
 $green: #06d6a0;
 
@@ -19,19 +21,32 @@ $green: #06d6a0;
 .sticky-nav {
   position: sticky;
   top:0;
+  z-index: 1;
+  background: white;
 }
 
 .nav-link {
   font-family: 'Playfair Display', serif;
   font-weight: regular;
-  border: 1px solid $green;
-  border-radius:2px;
-  margin: 10px;
-  padding: 7px 10px;
   text-decoration: none;
   background-color: white;
   color: $green;
   font-weight: medium;
+
+  @include for-tablet-landscape-down {
+    // border: 1px solid $green;
+    // border-radius:2px;
+    // margin: 10px;
+    // padding: 7px 10px;
+  }
+  @include for-desktop-up {
+    border: 1px solid $green;
+    border-radius:2px;
+    margin: 10px;
+    padding: 7px 10px;
+
+  }
+
   transition: 0.2s;
   &:hover{
     background: $green;
@@ -40,29 +55,63 @@ $green: #06d6a0;
 }
 
 .nav-link-group {
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  margin-right: 10px;
+  @include for-tablet-landscape-down {
+    display: none;
+  }
+  @include for-desktop-up {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    margin-right: 10px;
+  }
 }
 
-.nav-logo {
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-  background-color: #06d6a0;
-  margin-left: 10px;
-  position: fixed;
-  z-index: -2;
-  left: -50px;
+.nav-link-collapsed {
+  @include for-tablet-landscape-down {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    margin-right: 10px;
+  }
+  @include for-desktop-up {
+    display:none;
+  }
 }
+
+.accordion-links{
+  border-top: 1px solid $green;
+  border-bottom: 1px solid $green;
+}
+
+.text-align-right {
+  text-align: right;
+  width: 250px;
+}
+
+// .nav-logo {
+//   height: 300px;
+//   width: 300px;
+//   border-radius: 50%;
+//   background-color: #06d6a0;
+//   margin-left: 10px;
+//   position: fixed;
+//   z-index: 1;
+//   left: -50px;
+// }
 
 .nav-logo-text {
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    font-size: 50px;
-    width: 500px;
-    color: #073b4c;
-    padding-top: 15px;
-    z-index: 1;
+  font-family: 'Playfair Display', serif;
+  position: absolute;
+  font-weight: bold;
+  font-size: 50px;
+  width: 500px;
+  color: #4a4e69;
+  padding-top: 15px;
+  z-index: 1;
+  text-decoration: none;
+  transition: 0.2s;
+  &:hover{
+    text-decoration: none;
+    color: #22223b;
   }
+}
