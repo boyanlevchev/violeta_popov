@@ -36,7 +36,7 @@ function NavLink(props) {
       </div>
     );
   } else {
-    return <a href={href} className={className} onClick={() => props.displayPage(props.title.split(' ').join('').toLowerCase())}>{props.title}</a>
+    return <a href={props.href} className={className} onClick={() => props.displayPage(props.title.split(' ').join('').toLowerCase())}>{props.title}</a>
   }
 
 }

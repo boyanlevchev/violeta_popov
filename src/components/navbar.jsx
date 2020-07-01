@@ -9,14 +9,16 @@ function Navbar() {
   return(
     <div className="navbar">
       <div className="nav-logo"></div>
-      <NavLink title="Violeta Popov MD" headerClass={"nav-logo-text"}/>
+      {/*<NavLink title="VIOLETA POPOV"  headerClass={"nav-logo-text"}/>*/}
+      <div class="nav-logo-text"><h1>VIOLETA POPOV</h1><h1>M.D.</h1></div>
       <div className="nav-link-group">
-        <NavLink title="For patients"/>
-        <DropdownNavLink title="Events" links={["Presentations", "Conferences", "Lectures"]}/>
-        <DropdownNavLink title="Research and Publications" links={["Research", "Publications"]}/>
-        <NavLink title="Media"/>
-        <NavLink title="About"/>
-        <NavLink title="Contact"/>
+        <NavLink title="for patients" href="#for-patients-page"/>
+        <DropdownNavLink title="research"
+                         links={["Overview", "Research", "Publications"]}
+                         href={["#research-page","#research-page", "#research-page"]}/>
+
+        <NavLink title="media" href="#media-page"/>
+        <NavLink title="about" href="#about-page"/>
       </div>
 
       <div className="nav-link-collapsed">

@@ -1,0 +1,18 @@
+.contact-rotator {
+  position: fixed;
+  bottom: -50px;
+  right: -30px;
+  z-index: 3;
+}
+
+#circle {
+  position: relative;
+  width: 100px;
+  padding-bottom: 100%;
+  overflow: hidden; }
+
+#rotating-text {
+  font-family: $poppins;
+  font-size: 36px;
+  font-weight: bold;
+}

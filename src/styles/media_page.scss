@@ -1,0 +1,9 @@
+.follow-violeta {
+  & > h1 {
+    font-family: $cormorant;
+    color: $white;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 110%;
+  }
+}

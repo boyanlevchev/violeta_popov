@@ -1,0 +1,76 @@
+.research-card {
+  border: 1px solid $white;
+  width: 212px;
+  height: 305px;
+  display: flex;
+  flex-direction: column;
+}
+
+.research-card-a-tag {
+  text-decoration: none;
+  transition: 0.2s;
+  &:hover {
+    text-decoration: none;
+    transform: scale(1.03)
+  }
+}
+
+
+.research-card-image {
+  height: 77%;
+  width: 100%;
+}
+
+.publications-card {
+  background-image: url('/publications.png');
+  background-size: cover;
+}
+
+.chapters-card {
+  background-image: url('/chapters.png');
+  background-size: cover;
+}
+
+.abstracts-card {
+  background-image: url('/abstracts.png');
+  background-size: cover;
+}
+
+.lectures-card {
+  background-image: url('/lectures.png');
+  background-size: cover;
+}
+
+.research-card-footer {
+  border-top: 1px solid $white;
+  height: 23%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.research-card-text-box {
+  margin-left: 20px;
+  width: 150px;
+}
+
+.research-card-text {
+  color: $white;
+  font-family: $poppins;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+
+.research-card-caret {
+  color: $white;
+  font-family: $poppins;
+  font-weight: 200;
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin: 0;
+  padding-right: 8px;
+}

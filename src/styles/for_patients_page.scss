@@ -1,0 +1,103 @@
+.protocol-images {
+  width: auto;
+  height: 420px;
+}
+.protocol-image-1 {
+  position: absolute;
+  bottom: 5%;
+  right: 25%;
+  z-index: -1;
+}
+.protocol-image-2 {
+  position: absolute;
+  bottom: 25%;
+  right: 3%;
+  z-index: -1;
+}
+
+.for-patients-heading {
+  margin-top: 30px;
+  & > h1{
+    font-size: 70px;
+    font-family: $cormorant;
+    font-weight: 600;
+    color: $green;
+  }
+
+  & > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $green;
+    font-family: $poppins;
+    transition: 0.3s;
+    width: max-content;
+
+    &:hover {
+      padding-left: 5px;
+    }
+
+    & > h2 {
+      font-size: 26px;
+      font-weight: 400;
+      border-bottom: 1px solid $green;
+      display: inline-block;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+
+    & > i {
+      font-size: 30px;
+      font-weight: 200;
+      height: 50%;
+      margin-left: 10px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.for-patients-body {
+  margin-left: 5%;
+  width: 40%;
+  min-width: 400px;
+
+  & > p {
+    font-size: 30px;
+    line-height: 120%;
+    font-family: $cormorant;
+    font-weight: 700;
+    color: $green;
+    background-color: $beige;
+  }
+
+  & > a {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    line-height: 120%;
+    font-family: $cormorant;
+    font-weight: 700;
+    color: $green;
+    background-color: $beige;
+    text-decoration: none;
+    width: max-content;
+    transition: 0.2s;
+
+    &:hover {
+      color: $darkblue;
+    }
+
+    & > p {
+      border-bottom: 1px solid $green;
+    }
+
+    & > i {
+      font-family: $poppins;
+      font-style: normal;
+      font-size: 30px;
+      font-weight: 200;
+      margin-left: 10px;
+      padding-bottom: 12px;
+    }
+  }
+}

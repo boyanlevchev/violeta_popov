@@ -1,0 +1,22 @@
+.research-page-col {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#research-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80vh;
+}
+
+#research-page-heading{
+  font-family: $poppins;
+  font-size: 65px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: $white;
+  text-align: center;
+  padding-top: 3%;
+}

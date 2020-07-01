@@ -1,0 +1,14 @@
+.twitter-feed-border {
+  display: flex;
+  width: 700px;
+  height: 550px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  color: white;
+}
+
+.twitter-timeline > * {
+  color: white;
+}
