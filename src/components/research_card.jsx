@@ -11,7 +11,7 @@ class ResearchCard extends Component {
 
   render(){
     let researchCard = "research-card-image " + this.props.card
-    console.log(researchCard)
+
     return(
       <a className={"research-card-a-tag"} href="#research-page">
         <div className={"research-card"}>

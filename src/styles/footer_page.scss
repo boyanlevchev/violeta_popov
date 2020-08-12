@@ -55,5 +55,13 @@
 }
 
 #copyright-bit {
-
+  position: absolute;
+  bottom: 2em;
+  color: $white;
+  font-family: $poppins;
+  font-size: 12px;
+  font-weight: 200;
+  & > p {
+    margin: 0;
+  }
 }

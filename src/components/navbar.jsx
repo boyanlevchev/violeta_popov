@@ -10,7 +10,7 @@ function Navbar() {
     <div className="navbar">
       <div className="nav-logo"></div>
       {/*<NavLink title="VIOLETA POPOV"  headerClass={"nav-logo-text"}/>*/}
-      <div class="nav-logo-text"><h1>VIOLETA POPOV</h1><h1>M.D.</h1></div>
+      <div className="nav-logo-text"><h1>VIOLETA POPOV</h1><h1>M.D.</h1></div>
       <div className="nav-link-group">
         <NavLink title="for patients" href="#for-patients-page"/>
         <DropdownNavLink title="research"

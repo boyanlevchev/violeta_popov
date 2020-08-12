@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="100px" width="100px">
+  <style>
+    .svg-text {
+      font-weight: 400;
+      font-size: 11px;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: -0.06em;
+    }
+    .md-text {
+      font-family: 'Cormorant', serif;
+      font-weight: 100;
+      margin-bottom: 5px;
+    }
+  </style>
+  <path
+          id="myTextPath"
+          fill="none"
+          stroke="white"
+          class="color-stroke"
+          stroke-width="0.5"
+          d="
+            M 25, 50
+            a 25,25 0 1,1 50,0
+            a 25,25 0 1,1 -50,0
+            " />
+
+  <text style="stroke: #000000;" fill="white" stroke-width="0">
+      <textPath xlink:href="#myTextPath" class="svg-text color-fill"><tspan dy="-10" >CONTACT VIOLETA POPOV <tspan dy="-1" class="md-text">M.D.</tspan></tspan></textPath>
+    </text>
+</svg>

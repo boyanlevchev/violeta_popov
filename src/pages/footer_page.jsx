@@ -8,7 +8,7 @@ function FooterPage(props) {
   return(
     <div id={"footer-page"} className={"footer-size blue-background scroll-child"}>
       <div>
-        <span class={"footer-header"}><h1>VIOLETA POPOV</h1><h1>M.D.</h1></span>
+        <span className={"footer-header"}><h1>VIOLETA POPOV</h1><h1>M.D.</h1></span>
       </div>
 
       <div id={"footer-map"}>

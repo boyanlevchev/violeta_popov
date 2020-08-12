@@ -22,3 +22,17 @@
 @mixin for-big-desktop-up {
   @media (min-width: 1800px) { @content; }
 }
+
+
+@mixin for-fullscreen {
+  @media (min-height: 900px) { @content; }
+}
+@mixin for-normalscreen {
+  @media (max-height: 899px) { @content; }
+}
+@mixin for-twothirdscreen {
+  @media (max-height: 579px) { @content; }
+}
+@mixin for-thirdscreen {
+  @media (max-height: 280px) { @content; }
+}

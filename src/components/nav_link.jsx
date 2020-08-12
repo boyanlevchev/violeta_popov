@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux'
 
-import { displayPage } from '../actions'
+// import { displayPage } from '../actions'
 
 import Collapse from 'react-bootstrap/Collapse'
 
@@ -28,7 +28,8 @@ function NavLink(props) {
           <div id={props.title.split(' ').join('') + "-collapse"} className="accordion-links">
             {props.links.map( link => {
               return  <div>
-                        <a href={href} className={className} onClick={() => props.displayPage(link.split(' ').join('').toLowerCase())}>{link}</a>
+                        {/*onClick={() => props.displayPage(link.split(' ').join('').toLowerCase())}*/}
+                        <a href={href} className={className} >{link}</a>
                       </div>
             })}
           </div>
@@ -36,14 +37,15 @@ function NavLink(props) {
       </div>
     );
   } else {
-    return <a href={props.href} className={className} onClick={() => props.displayPage(props.title.split(' ').join('').toLowerCase())}>{props.title}</a>
+    {/*onClick={() => props.displayPage(props.title.split(' ').join('').toLowerCase())}*/}
+    return <a href={props.href} className={className}>{props.title}</a>
   }
 
 }
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators( {
-    displayPage: displayPage
+    // displayPage: displayPage
   },
     dispatch
   );
@@ -51,7 +53,7 @@ function mapDispatchToProps(dispatch) {
 
 function mapReduxStateToProps(reduxState) {
   return {
-    selectedFlat: reduxState.selectedFlat
+    // selectedFlat: reduxState.selectedFlat
   }
 }
 
