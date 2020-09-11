@@ -19,7 +19,7 @@ function MediaPage(props) {
         <Row>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
             <div>
-              <TwitterFeed/>
+              <TwitterFeed tweets={props.tweets}/>
             </div>
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>

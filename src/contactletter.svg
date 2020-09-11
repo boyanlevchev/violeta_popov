@@ -1,9 +1,0 @@
-
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="50" height="50" viewBox="0 0 50.000000 50.000000"
- preserveAspectRatio="xMidYMid meet">
-  <g>
-    <rect width="50" height="35" fill="none" class="color-stroke" style="stroke-width:1;stroke:white;" />
-    <polyline points="0,0 25,20 50,0" fill="none" stroke="white" class="color-stroke" stroke-width="1" />
-  </g>
-</svg>

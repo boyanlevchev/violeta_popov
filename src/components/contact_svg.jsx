@@ -1,1 +1,0 @@
-contac_svg.jsx

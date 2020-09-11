@@ -22,8 +22,17 @@ class App extends Component {
     super(props)
     this.state = {
       color: "color-white",
-      stroke: "stroke-white"
+      stroke: "stroke-white",
+      tweets: {}
     }
+  }
+
+  componentDidMount() {
+    fetch('http://localhost:3001/twitter')
+      .then(res => res.json())
+      .then(res =>
+        this.setState({tweets: res})
+      )
   }
 
   handleContactChange = (color) => {
@@ -40,6 +49,7 @@ class App extends Component {
   }
 
   render(){
+
 
     return (
       <div className="App scroll-container">
@@ -61,7 +71,7 @@ class App extends Component {
         </InView>
 
         <InView threshold="0.9" onChange={(inView, entry) => this.handleContactChange("blue")}>
-          <MediaPage/>
+          <MediaPage tweets={this.state.tweets}/>
         </InView>
 
         <InView threshold="0.9" onChange={(inView, entry) => this.handleContactChange("green")}>

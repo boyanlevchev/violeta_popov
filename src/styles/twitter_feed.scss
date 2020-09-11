@@ -1,16 +1,95 @@
 .twitter-feed-border {
   position: relative;
   display: flex;
-  width: 700px;
-  height: 550px;
+  width: 49vw;
+  height: 78vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 2px solid white;
   color: white;
   z-index: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.twitter-timeline > * {
+.tweets-scroll {
+  overflow: scroll;
+  width: 600px;
+}
+
+.tweet-container {
+  padding-top: 20px;
+  font-family: $poppins;
+}
+
+
+.retweet-preheader {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 18px;
+  margin-left: 24px;
+  letter-spacing: 1px;
+}
+
+.tweet-header {
+  display: flex;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.user-name {
+  padding-left: 20px;
+  letter-spacing: 1px;
+  &> h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+    &> a{
+      color: white;
+    }
+  }
+  &> h2 {
+  font-size: 20px;
+  font-weight: 400;
+  }
+  &> p {
+    font-size: 22px;
+    font-weight: 500;
+
+  }
+}
+
+.mention-color {
+  color: #80bdbb;
+}
+
+.url-link-underline {
   color: white;
+  text-decoration: underline;
+  &:hover{
+    color: #80bdbb;
+  }
+}
+
+.date-tweeted {
+  font-size: 18px;
+  font-weight: 200;
+  text-align: right;
+}
+
+.see-more {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &> a {
+    color: white;
+
+  }
 }
